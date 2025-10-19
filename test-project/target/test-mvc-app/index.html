@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test MVC Framework</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; text-align: center; }
+        .test-links { margin: 20px 0; }
+        .test-links a { display: block; margin: 10px 0; color: #007bff; text-decoration: none; }
+        .test-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test du Framework MVC</h1>
+        <p>Cette application teste notre Framework MVC maison avec Front Controller.</p>
+        
+        <div class="test-links">
+            <h3>Testez ces URLs :</h3>
+            <a href="/test-mvc-app/">Accueil (/)</a>
+            <a href="/test-mvc-app/users">Page Users (/users)</a>
+            <a href="/test-mvc-app/products/123">Page Product (/products/123)</a>
+            <a href="/test-mvc-app/admin/dashboard">Admin Dashboard (/admin/dashboard)</a>
+            <a href="/test-mvc-app/any/other/url">N'importe quelle URL</a>
+        </div>
+        
+        <p><strong>Chaque URL devrait être capturée par le FrontServlet !</strong></p>
+    </div>
+</body>
+</html>
